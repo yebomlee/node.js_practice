@@ -4,9 +4,11 @@
 // npm install cowsay(cowsay라는 서드파티 모듈을 설치)
 const cowsay = require('cowsay');
 
-console.log(cowsay.say({
-    text: 'I love javascript!'
-})); // 귀엽군.
+console.log(
+  cowsay.say({
+    text: 'I love javascript!',
+  })
+); // 귀엽군.
 
 
 // 1. package-lock.json 파일
