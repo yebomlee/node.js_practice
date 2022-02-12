@@ -12,7 +12,7 @@ myEmitter.on('test', () => {
 myEmitter.emit('test'); // emit method: 이벤트를 발생시키는 함수.
 
 
-// 코어 모듈의 많은 객체들이 EventEmitter의 객체이다!
+// 코어 모듈의 많은 객체들이 EventEmitter의 객체이다!(이를 사용함으로써 이벤트 기반 프로그래밍 가능.)
 /*
 Much of the Node.js core API is built around an idiomatic asynchronous event-driven architecture 
 in which certain kinds of objects (called "emitters") emit named events 

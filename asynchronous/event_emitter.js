@@ -38,3 +38,30 @@ myEmitter2.on('test', () => {
 });
 
 myEmitter.emit('test'); // 1, 2
+
+
+// 이벤트를 발생시킬 때, 추가 정보 함께 전달하기
+const EventEmitter = require('events');
+
+const myEmitter = new EventEmitter();
+
+myEmitter.on('test', (arg1, arg2, arg3) => {
+  console.log(arg1);
+  console.log(arg2);
+  console.log(arg3);
+});
+
+myEmitter.emit('test', 'apple', 'banana', 'pear');
+
+// 객체를 만들어서 전달하는 것을 선호.
+const EventEmitter = require('events');
+
+const myEmitter = new EventEmitter();
+
+const obj = { type: 'text', data: 'Hello World', date: '2020-02-13' };
+
+myEmitter.on('test', (info) => {
+  console.log(info);
+});
+
+myEmitter.emit('test', obj);
