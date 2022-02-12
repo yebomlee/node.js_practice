@@ -14,3 +14,15 @@ console.log('Hello World!');
 // 2. REPL 모드에서 실행 'node' 입력 후 실행.
 // Read: 사용자가 입력한 내용을 읽고, Eval: 그 결과값을 구한 다음, Print: 결과값을 출력. Loop: 이런 과정을 계속 반복하는 모드.
 // 짧은 코드를 실행할 때 유용.
+
+
+// node.js와 브라우저의 차이
+// 제공하는 API가 다름.(Application Programming Interface)
+// 어떤 플랫폼이나 실행환경 등에서 제공하는 인터페이스, 특정 환경에서 자유롭게 가져다 쓸 수 있는 함수나 객체 등을 의미.
+// node.js (UI 관련 API X, window, document 객체 X, 컴퓨터 제어 API O)
+
+// node.js는 Electron 프레임워크를 사용하여 PC 프로그램 제작 가능. (VS code도 Electron으로 개발. node.js 위에서 실행.)
+// node.js는 V8 엔진 사용. 브라우저는 종류와 버전에 따라 다름.(파이어폭스: SpiderMonkey, 마이크로엣지: V8, Chakra 사용)
+
+// 특정 브라우저가 JS의 표준 문법 중에서 어디까지 지원하는 확인 하는 것이 중요!
+// 각 브라우저별 자바스크립트 표준 구현 현황: https://kangax.github.io/compat-table/es6/
