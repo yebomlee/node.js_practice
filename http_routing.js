@@ -1,4 +1,4 @@
-// 라우팅: 요청이 들어온 url에 따라 서버가 다르게 응답 처리 하는 것,
+// 라우팅: 요청이 들어온 url에 따라 서버가 다르게 응답 처리 하는 것, 알맞은 처리로 분기.
 const http = require('http');
 
 users = ['Judy', 'Nick', 'Anna', 'Elsa'];
