@@ -2,5 +2,19 @@
   "dependencies": {
     "cowsay": "^1.5.0",
     "express": "^4.17.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "node.js_practice",
+  "version": "1.0.0",
+  "main": "express_routing.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:yebomlee/node.js_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
